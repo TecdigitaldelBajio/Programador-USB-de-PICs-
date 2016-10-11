@@ -1,0 +1,102 @@
+CCS PCM C Compiler, Version 5.008, 5967               03-oct.-16 20:19
+
+               Filename:   C:\Users\TDB_PC\Documents\CCS C Projects\PIC12F1822_Blink.lst
+
+               ROM used:   51 words (2%)
+                           Largest free fragment is 1997
+               RAM used:   5 (4%) at main() level
+                           21 (16%) worst case
+               Stack used: 1 locations
+               Stack size: 16
+
+*
+0000:  MOVLP  00
+0001:  GOTO   018
+0002:  NOP
+.................... #include <PIC12F1822_Blink.h> 
+.................... #include <12F1822.h> 
+.................... //////// Standard Header file for the PIC12F1822 device //////////////// 
+.................... #device PIC12F1822 
+....................  
+.................... #list 
+....................  
+.................... #device ADC=16 
+....................  
+.................... #FUSES NOWDT                 	//No Watch Dog Timer 
+.................... #FUSES NOMCLR                	//Master Clear pin used for I/O 
+.................... #FUSES NOBROWNOUT            	//No brownout reset 
+.................... #FUSES NOLVP                 	//No low voltage prgming, B3(PIC16) or B5(PIC18) used for I/O 
+....................  
+.................... #use delay(internal=8000000) 
+0003:  MOVLW  20
+0004:  MOVWF  05
+0005:  MOVLW  05
+0006:  MOVWF  04
+0007:  MOVF   00,W
+0008:  BTFSC  03.2
+0009:  GOTO   017
+000A:  MOVLW  02
+000B:  MOVWF  21
+000C:  CLRF   20
+000D:  DECFSZ 20,F
+000E:  GOTO   00D
+000F:  DECFSZ 21,F
+0010:  GOTO   00C
+0011:  MOVLW  97
+0012:  MOVWF  20
+0013:  DECFSZ 20,F
+0014:  GOTO   013
+0015:  DECFSZ 00,F
+0016:  GOTO   00A
+0017:  RETURN
+....................  
+.................... #define LED PIN_A5 
+.................... #define DELAY 100 
+....................  
+....................  
+....................  
+....................  
+.................... void main() 
+0018:  MOVLW  72
+0019:  MOVLB  01
+001A:  MOVWF  19
+001B:  MOVLB  03
+001C:  CLRF   0C
+001D:  MOVLB  02
+001E:  CLRF   12
+001F:  CLRF   11
+.................... { 
+....................  
+.................... 	//Example blinking LED program 
+.................... 	while(true) 
+.................... 	{ 
+.................... 		output_low(LED); 
+0020:  MOVLB  01
+0021:  BCF    0C.5
+0022:  MOVLB  02
+0023:  BCF    0C.5
+.................... 		delay_ms(DELAY); 
+0024:  MOVLW  64
+0025:  MOVLB  00
+0026:  MOVWF  25
+0027:  CALL   003
+.................... 		output_high(LED); 
+0028:  MOVLB  01
+0029:  BCF    0C.5
+002A:  MOVLB  02
+002B:  BSF    0C.5
+.................... 		delay_ms(DELAY); 
+002C:  MOVLW  64
+002D:  MOVLB  00
+002E:  MOVWF  25
+002F:  CALL   003
+0030:  MOVLB  02
+0031:  GOTO   020
+.................... 	} 
+....................  
+.................... } 
+0032:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3984   INTRC_IO NOWDT PUT NOMCLR NOPROTECT NOCPD NOBROWNOUT NOCLKOUT IESO FCMEN
+   Word  2: 1EFF   NOWRT PLL_SW STVREN BORV19 NODEBUG NOLVP

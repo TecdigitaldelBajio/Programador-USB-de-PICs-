@@ -1,0 +1,58 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PACKED_MEMORY.P2
+004-005 @WRITE_PROGRAM_MEMORY8.P3
+004-005 @READ_PACKED_MEMORY.P4
+006-007 @READ_PACKED_MEMORY.P1
+006-007 @WRITE_PACKED_MEMORY.P2
+020     @SCRATCH
+021     @SCRATCH
+021     _RETURN_
+022     @SCRATCH
+023     @SCRATCH
+025     @delay_ms1.P1
+111.6   C1OUT
+191-192 @WRITE_PROGRAM_MEMORY8.P1
+191-192 @READ_PROGRAM_MEMORY8.P2
+291     CCP_1
+291     CCP_1_LOW
+292     CCP_1_HIGH
+
+ROM Allocation:
+000003  @delay_ms1
+000018  @cinit1
+000018  main
+000020  @cinit2
+
+Project Directory:
+    C:\Users\TDB_PC\Documents\CCS C Projects\
+
+Project Files:
+    PIC12F1822_Blink.c                                      [03-oct.-16 20:19  CRC=D872A938]
+    PIC12F1822_Blink.h                                      [03-oct.-16 20:19  CRC=B723CC71]
+    ..\..\..\..\Program Files (x86)\PICC 5\Devices\12F1822.h [03-jul.-13 15:28  CRC=38FBC889]
+
+Source signature=018E06BB
+
+Units:
+    PIC12F1822_Blink (main)
+
+Compiler Settings:
+    Processor:      PIC12F1822
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Enhanced 16:    Yes
+
+Output Files:
+    XREF file:   PIC12F1822_Blink.xsym
+    Errors:      PIC12F1822_Blink.err
+    Ext Symbols: PIC12F1822_Blink.esym
+    INHX8:       PIC12F1822_Blink.hex
+    Symbols:     PIC12F1822_Blink.sym
+    List:        PIC12F1822_Blink.lst
+    Debug/COFF:  PIC12F1822_Blink.cof
+    Project:     PIC12F1822_Blink.ccspjt
+    Call Tree:   PIC12F1822_Blink.tre
+    Statistics:  PIC12F1822_Blink.STA
