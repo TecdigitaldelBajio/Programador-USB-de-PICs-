@@ -1,0 +1,69 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @READ_PACKED_MEMORY.P2
+004-005 @WRITE_PROGRAM_MEMORY8.P3
+004-005 @WRITE_PACKED_MEMORY.P4
+006-007 @READ_PACKED_MEMORY.P1
+006-007 @WRITE_PACKED_MEMORY.P2
+021     @delay_ms1.P1
+021     main.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+111.6   C1OUT
+113.6   C2OUT
+191-192 @WRITE_PROGRAM_MEMORY8.P1
+191-192 @READ_PROGRAM_MEMORY8.P2
+291     CCP_1
+291     CCP_1_LOW
+292     CCP_1_HIGH
+298     CCP_2_LOW
+298     CCP_2
+299     CCP_2_HIGH
+311     CCP_3_LOW
+311     CCP_3
+312     CCP_3_HIGH
+318     CCP_4_LOW
+318     CCP_4
+319     CCP_4_HIGH
+
+ROM Allocation:
+000003  @delay_ms1
+000018  @cinit1
+000018  main
+000023  @cinit2
+
+Project Directory:
+    C:\Users\TDB_PC\Documents\CCS C Projects\
+
+Project Files:
+    PIC16F1824_Blink.c                                      [16-oct.-16 11:55  CRC=91BD3A79]
+    PIC16F1824_Blink.h                                      [16-oct.-16 10:34  CRC=F5AFCAD8]
+    ..\..\..\..\Program Files (x86)\PICC 5\Devices\16F1824.h [03-jul.-13 15:28  CRC=8ED5187C]
+
+Source signature=A5173649
+
+Units:
+    PIC16F1824_Blink (main)
+
+Compiler Settings:
+    Processor:      PIC16F1824
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Enhanced 16:    Yes
+
+Output Files:
+    XREF file:   PIC16F1824_Blink.xsym
+    Errors:      PIC16F1824_Blink.err
+    Ext Symbols: PIC16F1824_Blink.esym
+    INHX8:       PIC16F1824_Blink.hex
+    Symbols:     PIC16F1824_Blink.sym
+    List:        PIC16F1824_Blink.lst
+    Debug/COFF:  PIC16F1824_Blink.cof
+    Project:     PIC16F1824_Blink.ccspjt
+    Call Tree:   PIC16F1824_Blink.tre
+    Statistics:  PIC16F1824_Blink.STA
