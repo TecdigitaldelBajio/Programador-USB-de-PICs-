@@ -1,0 +1,22 @@
+[PROJECT]
+Target=PIC16F1824_Blink1.hex
+Processor_Text=PIC16LF1824
+CCSVerions=5.008
+Compiler=PCM
+CCSVersion=5.008
+[Target Data]
+FileList=PIC16F1824_Blink1.c
+[Directories]
+Include=C:\Program Files (x86)\PICC_5\Devices\;C:\Program Files (x86)\PICC_5\Drivers\;C:\Users\TDB\Documents\CCS C Projects\
+[C:\Users\TDB\Documents\CCS C Projects\PIC16F1824_Blink1]
+Type=4
+[mru-list]
+1=PIC16F1824_Blink1.c
+[Opened Files]
+1=PIC16F1824_Blink1.c
+2=
+[PIC16F1824_Blink1.c]
+Type=4
+[Units]
+Count=1
+1=PIC16F1824_Blink1 (main)
