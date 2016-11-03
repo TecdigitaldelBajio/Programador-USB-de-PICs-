@@ -1,0 +1,46 @@
+
+ROM used:   88/16384 (0%)
+            88/16384 (0%) including unused fragments
+
+            0.1 Average locations per line
+            14.7 Average locations per statement
+
+RAM used:   4/2048 (0%) at main() level
+            5/2048 (0%) worst case
+
+Stack used: 1 worst case (1 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   14     6 100  PIC18F4550_Blink.c
+   19     0   0  PIC18F4550_Blink.h
+  821     0   0  ..\..\..\..\Program Files (x86)\PICC 5\Devices\18F4550.h
+----- -----
+  854     6 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38  22    1             @delay_ms1
+0     46  26    0    86  1.6  main
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               1
+    Statements              6
+    Comments                143
+    Volume (V)              90
+    Difficulty (D)          1.4
+    Effort to implement (E) 125
+    Time to implement (T)   0 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   1
+    Maintainability (MI)    102
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE    84  32680  
+
+
+

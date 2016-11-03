@@ -1,0 +1,5 @@
+ÀÄPIC18F4550_Blink
+   ÀÄmain  0/46  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÀÄ@delay_ms1  0/38  Ram=1
