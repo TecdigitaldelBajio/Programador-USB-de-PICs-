@@ -1,0 +1,47 @@
+
+ROM used:   574/22014 (1%)
+            574/22014 (1%) including unused fragments
+
+            0.6 Average locations per line
+            95.7 Average locations per statement
+
+RAM used:   128/8192 (2%) at main() level
+            129/8192 (2%) worst case
+
+Stack used: 8 worst case (8 in main + 0 for interrupts)
+Stack size: 128
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   19     6 100  PIC24FJ64GA002_Blink.c
+   14     0   0  PIC24FJ64GA002_Blink.h
+  852     0   0  ..\..\..\..\Program Files (x86)\PICC 5\Devices\24FJ64GA002.h
+----- -----
+  885     6 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     16   1    2             @delay_ms1
+0     46   4    0    86  1.6  main
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               1
+    Statements              6
+    Comments                139
+    Volume (V)              90
+    Difficulty (D)          1.4
+    Effort to implement (E) 125
+    Time to implement (T)   0 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   1
+    Maintainability (MI)    91
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-001FE   508  0  
+00200-0ABFA    62  43454  
+
+
+

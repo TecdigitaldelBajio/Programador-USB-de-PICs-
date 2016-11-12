@@ -1,0 +1,86 @@
+CCS PCD C Compiler, Version 5.008, 5967               17-oct.-16 11:11
+
+               Filename:   C:\Users\TDB_PC\Documents\CCS C Projects\PIC24FJ64GA002_Blink.lst
+
+               ROM used:   574 bytes (1%)
+                           Largest free fragment is 43454
+               RAM used:   128 (2%) at main() level
+                           129 (2%) worst case
+               Stack used: 8 locations
+               Stack size: 128
+
+*
+0000:  GOTO    210
+.................... #include <PIC24FJ64GA002_Blink.h> 
+.................... #include <24FJ64GA002.h> 
+.................... //////// Standard Header file for the PIC24FJ64GA002 device //////////////// 
+.................... #device PIC24FJ64GA002 
+....................  
+.................... #list 
+....................  
+....................  
+.................... #FUSES NOWDT                    //No Watch Dog Timer 
+.................... #FUSES NOWINDIS                 //Watch Dog Timer in Window mode 
+.................... #FUSES NOJTAG                   //JTAG disabled 
+.................... #FUSES CKSFSM                   //Clock Switching is enabled, fail Safe clock monitor is enabled 
+....................  
+.................... #device ICSP=1 
+.................... #use delay(internal=8000000) 
+*
+0200:  CP0     W0
+0202:  BTSC.B  42.1
+0204:  BRA     20E
+0206:  REPEAT  #F9B
+0208:  NOP     
+020A:  DEC     W0,W0
+020C:  BRA     NZ,206
+020E:  RETURN  
+....................  
+.................... #define LED PIN_B0 
+.................... #define DELAY 100 
+....................  
+....................  
+....................  
+....................  
+.................... void main() 
+0210:  BSET.B  81.7
+0212:  CLR     744
+0214:  SETM    32C
+0216:  MOV     #2780,W15
+0218:  MOV     #27FF,W0
+021A:  MOV     W0,20
+021C:  NOP     
+021E:  MOV     #2780,W15
+0220:  MOV     #27FF,W0
+0222:  MOV     W0,20
+0224:  NOP     
+.................... { 
+....................  
+....................  
+....................  
+.................... 	//Example blinking LED program 
+.................... 	while(true) 
+.................... 	{ 
+.................... 		output_low(LED); 
+0226:  BCLR.B  2C8.0
+0228:  BCLR.B  2CC.0
+.................... 		delay_ms(DELAY); 
+022A:  MOV     #64,W0
+022C:  CALL    200
+.................... 		output_high(LED); 
+0230:  BCLR.B  2C8.0
+0232:  BSET.B  2CC.0
+.................... 		delay_ms(DELAY); 
+0234:  MOV     #64,W0
+0236:  CALL    200
+023A:  BRA     226
+.................... 	} 
+....................  
+.................... } 
+023C:  PWRSAV  #0
+
+Configuration Fuses:
+   Word  1L: 3F3F   WPOSTS16 WDT128 NOWINDIS NOWDT ICSP1 NODEBUG NOWRT NOPROTECT NOJTAG
+          H: FF00  
+   Word  2L: FF37   NOPR NOALTI2C1 IOL1WAY NOOSCIO CKSFSM FRC_PS SOSC_SEC WUT_DEFAULT IESO
+          H: FF00  

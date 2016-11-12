@@ -1,0 +1,56 @@
+W0      @SCRATCH
+W0L     _RETURN_
+W0 -W1  @DIV3232B.P1
+W0 -W1  @READ_ROM_MEMORY.P2
+W0      @delay_us1.P3
+W0      @delay_ms1.P4
+W1      @SCRATCH
+W1      @READ_PACKED_MEMORY.P1
+W1      @WRITE_PACKED_MEMORY.P2
+W2      @WRITE_PACKED_MEMORY.P1
+W2      @READ_PACKED_MEMORY.P2
+W2      @READ_ROM_MEMORY.P3
+W2 -W3  @DIV3232B.P4
+W3      @WRITE_PACKED_MEMORY.P1
+W3      @READ_ROM_MEMORY.P2
+W3      @READ_PACKED_MEMORY.P3
+2780-27FF Stack
+
+ROM Allocation:
+000200  @delay_ms1
+000210  @cinit1
+000210  main
+000216  @cinit2
+
+Project Directory:
+    C:\Users\TDB_PC\Documents\CCS C Projects\
+
+Project Files:
+    PIC24FJ64GA002_Blink.c                                  [14-oct.-16 12:47  CRC=D872A938]
+    PIC24FJ64GA002_Blink.h                                  [17-oct.-16 11:11  CRC=FEF396C3]
+    ..\..\..\..\Program Files (x86)\PICC 5\Devices\24FJ64GA002.h [03-jul.-13 15:30  CRC=DD621A2C]
+
+Source signature=922A7453
+
+Units:
+    PIC24FJ64GA002_Blink (main)
+
+Compiler Settings:
+    Processor:      PIC24FJ64GA002
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: SIGNED: 8,16,32
+    Float,Double:   32,64
+
+Output Files:
+    XREF file:   PIC24FJ64GA002_Blink.xsym
+    Errors:      PIC24FJ64GA002_Blink.err
+    Ext Symbols: PIC24FJ64GA002_Blink.esym
+    INHX8:       PIC24FJ64GA002_Blink.hex
+    Symbols:     PIC24FJ64GA002_Blink.sym
+    List:        PIC24FJ64GA002_Blink.lst
+    Debug/COFF:  PIC24FJ64GA002_Blink.cof
+    Project:     PIC24FJ64GA002_Blink.ccspjt
+    Call Tree:   PIC24FJ64GA002_Blink.tre
+    Statistics:  PIC24FJ64GA002_Blink.STA

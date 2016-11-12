@@ -1,0 +1,24 @@
+[PROJECT]
+Target=PIC24FJ64GA002_Blink.hex
+Processor_Text=PIC24FJ64GA002
+CCSVerions=5.008
+Compiler=PCD
+CCSVersion=5.008
+[Target Data]
+FileList=PIC24FJ64GA002_Blink.c
+[Directories]
+Include=C:\Program Files (x86)\PICC 5\Devices\;C:\Program Files (x86)\PICC 5\DriversC:\Program Files (x86)\PICC 5\Devices\;C:\Program Files (x86)\PICC 5\Drivers\;C:\Users\TDB_PC\Documents\CCS C Projects\
+[C:\Users\TDB_PC\Documents\CCS C Projects\PIC24FJ64GA002_Blink]
+Type=4
+[mru-list]
+1=PIC24FJ64GA002_Blink.c
+[Opened Files]
+1=PIC24FJ64GA002_Blink.c
+2=PIC24FJ64GA002_Blink.h
+3=..\..\..\..\Program Files (x86)\PICC 5\Devices\24FJ64GA002.h
+4=
+[PIC24FJ64GA002_Blink.c]
+Type=4
+[Units]
+Count=1
+1=PIC24FJ64GA002_Blink (main)
